@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="vierwport" content="width=device-width,initial-scale=1.0">  
+    <meta http-equiv="X-UA-Campatible" content="ie=edge">  
+    <title>Krok Game</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Krok Game</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+            <a href="#" title="Преймущества" onclick="slowScroll('#oweriew')">Преймущества</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <a href="#" title="Ответы" onclick="slowScroll('#faq')">Ответы</a>            
+        </div>
+    </header>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+          $('body').animate({
+             scrollTop: $(id).offset().top  
+          }, 500);  
+        }
+        
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() == 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        })
+    </script>
+  </body>
+</html>
