@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="vierwport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Campatible" content="ie=edge">
-    <title>Krok Game</title>
+    <title>Krok Game </title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -18,9 +18,11 @@
     </header>
 
     <div id="top">
-        <h1>Правила гри крокодил</h1>
-        <h3>Правила дуже прості одна людина вибирає слово та малює його а інші стараються вгадати його.(Писати саме слово заборонено)</h3>
+        <h1>Правила гри Kрокодил</h1>
+        <h3>Спочатку потрібно зареєструватися в чаті.Після цього один з гравців задумує слово і намагається пояснити загадане але не говорити саме слово</h3>
+        <h3>Дозволяється малювати і всіляко натякати але не говорити саме слово</h3>
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -31,7 +33,7 @@
         }
 
         $(document).on("scroll", function () {
-            if($(window).scrollTop() == 0)
+            if($(window).scrollTop() === 0)
                 $("header").removeClass("fixed");
             else
                 $("header").attr("class", "fixed");
