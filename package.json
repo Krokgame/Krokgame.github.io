@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Створння гри крокодил на сайті\r # Команда \r ## Група ІВ-83\r ### Бекенд  \r Куровський Андрій\r ### Фронтенд  \r Бондаренко Максим",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krokgame/Krokgame.github.io.git"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krokgame/Krokgame.github.io/issues"
+  },
+  "homepage": "https://github.com/Krokgame/Krokgame.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

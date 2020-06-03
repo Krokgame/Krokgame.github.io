@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="vierwport" content="width=device-width,initial-scale=1.0">  
-    <meta http-equiv="X-UA-Campatible" content="ie=edge">  
+    <meta name="vierwport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Campatible" content="ie=edge">
     <title>Krok Game</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -13,43 +13,23 @@
             <span>Krok Game</span>
         </div>
         <div id="about">
-            <a href="#" title="Lobby" onclick="slowScroll('#main')">Lobby</a>
-            <a href="#" title="Nickname" onclick="slowScroll('#nick')">Nickname</a>
+            <a href="chat.html">Lobby</a>
         </div>
     </header>
-    
+
     <div id="top">
         <h1>Правила гри крокодил</h1>
         <h3>Правила дуже прості одна людина вибирає слово та малює його а інші стараються вгадати його.(Писати саме слово заборонено)</h3>
     </div>
-    
-    <div id="main">
-        <div class="intro">
-            <h2>Lobby</h2>
-            <span>Shaslyvoi igry</span>
-        </div>
-        <div class="text">
-            <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-    </div>
-    
-    <div id="nick">
-        <centre><h5>Nickname</h5></centre>
-        <form id="form_input">
-            <label for="nickname">Nickname <span>*</span></label><br>
-            <input type="text" placeholder="Vvedit nickname" name="nickname" id="nickname">
-            <div id="send" class="btn">Send</div>
-        </form>
-    </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function slowScroll(id) {
           $('html, body').animate({
-             scrollTop: $(id).offset().top  
-          }, 500);  
+             scrollTop: $(id).offset().top
+          }, 500);
         }
-        
+
         $(document).on("scroll", function () {
             if($(window).scrollTop() == 0)
                 $("header").removeClass("fixed");
